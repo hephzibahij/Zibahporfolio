@@ -154,6 +154,8 @@ h2::after {
     margin: var(--gutter-small) 0;
 }
 
+
+
 h3 {
     font-size: var(--font-size-medium-1);
     margin-bottom: var(--gutter-small);
