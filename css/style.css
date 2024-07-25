@@ -604,6 +604,20 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Contact ----- */
 /* --------------------------------------- */
 
+.service {
+    background-color: #f0e9f2;
+    padding: 60px 0;
+}
+.service h2 {
+    font-size: 2.5rem;
+}
+
+.service__text {
+    font-size: 15px;
+    color:white;
+    max-width: 800px;
+    margin: 0 auto;
+}
 .contact__info {
     max-width: var(--container-medium-width);
 }
