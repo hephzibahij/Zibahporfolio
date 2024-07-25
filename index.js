@@ -5,14 +5,7 @@
 // index.js
 
 // JavaScript for hamburger menu toggle
-const menu = document.querySelector('#nav__links');
-const menuLinks = document.querySelector('.nav-links');
-
-menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('open');
-})
-
+document.querySelector("#root > div >  > ul")
 
  const handleFirstTab = (e) => {
     if(e.key === 'Tab') {
