@@ -1,9 +1,27 @@
-
 /* -----------------------------------------
   Have focus outline only for keyboard users 
  ---------------------------------------- */
 
- const handleMouseDownOnce = () => {
+ document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+
+  hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+  });
+});
+
+
+ const handleFirstTab = (e) => {
+  if(e.key === 'Tab') {
+    document.body.classList.add('user-is-tabbing')
+
+    window.removeEventListener('keydown', handleFirstTab)
+    window.addEventListener('mousedown', handleMouseDownOnce)
+  }
+
+}
+
+const handleMouseDownOnce = () => {
   document.body.classList.remove('user-is-tabbing')
 
   window.removeEventListener('mousedown', handleMouseDownOnce)
@@ -32,7 +50,3 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
-
-function showAccessForm() {
-  document.getElementById('access-form').style.display = 'block';
-}
