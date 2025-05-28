@@ -2,94 +2,220 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hephzibah Ijeje | Frontend Developer in Port-Harcourt</title>
+  <title>Hephzibah Ijeje | Frontend Developer</title>
+  <meta name="description" content="Hephzibah Ijeje is a frontend developer passionate about user-friendly, responsive websites and web applications.">
+  <meta name="author" content="Hephzibah Ijeje" />
 
-  <meta name="description" content="Portfolio of Hephzibah Ijeje, a frontend web developer based in Port-Harcourt, Nigeria." />
-  <meta name="keywords" content="Hephzibah Ijeje, Web Developer, Frontend Developer, HTML, CSS, JavaScript, React" />
-  <link rel="shortcut icon" href="image/tech.jpeg" type="image/jpeg" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/foundation.css" />
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="Hephzibah Ijeje | Frontend Developer" />
+  <meta property="og:description" content="Check out my portfolio showcasing frontend development projects, services, and contact info." />
+  <meta property="og:image" content="image/tech.jpeg" />
+  <meta property="og:url" content="#" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    nav {
+      background: #222;
+      color: white;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav__logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav__items {
+      display: flex;
+      list-style: none;
+      gap: 1em;
+    }
+
+    .nav__item a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hamburger-icon {
+      display: none;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5em 1em;
+      background: #1e293b;
+      color: white;
+    }
+
+    section {
+      padding: 4em 1em;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .row {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .service, .about, .project, .contact, .testimonials {
+      background: white;
+      margin-bottom: 2em;
+      border-radius: 10px;
+      padding: 2em;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .row img {
+      width: 100px;
+    }
+
+    .contact form {
+      display: grid;
+      gap: 1em;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.8em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #222;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .nav__items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #222;
+        padding: 1em;
+      }
+
+      .nav__items--active {
+        display: flex;
+      }
+
+      .hamburger-icon {
+        display: block;
+        font-size: 1.5em;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="header" role="banner" id="top">
+
+  <nav>
+    <div class="nav__logo">Hephzibah</div>
+    <div class="hamburger-icon">☰</div>
+    <ul class="nav__items">
+      <li class="nav__item"><a href="#home">Home</a></li>
+      <li class="nav__item"><a href="#about">About</a></li>
+      <li class="nav__item"><a href="#service">Services</a></li>
+      <li class="nav__item"><a href="#project">Projects</a></li>
+      <li class="nav__item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1 data-aos="fade-down">Welcome to My Portfolio</h1>
+    <p data-aos="fade-up">I am Hephzibah Ijeje, a frontend developer based in Port-Harcourt.</p>
+  </section>
+
+  <section class="about" id="about" data-aos="fade-up">
     <div class="row">
-      <nav class="nav" role="navigation" aria-label="Main Navigation">
-        <div class="hamburger-icon" id="hamburger" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <ul class="nav__items" id="nav-menu">
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#Service" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-      </nav>
+      <h2>About Me</h2>
+      <p>
+        Passionate about creating beautiful and functional user interfaces. With a solid foundation in HTML, CSS, and JavaScript, I love building responsive and interactive websites.
+      </p>
     </div>
+  </section>
 
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary"><span>Hephzibah Ijeje</span></h1>
-        <p>A frontend developer based in Port-Harcourt, Nigeria. Let’s connect!</p>
-        <a href="mailto:hephzibahijeje89@gmail.com" class="btn btn--pink">Get in Touch</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main content (unchanged) -->
-  <main role="main">
-    <!-- Your Work, About, Services, Contact sections here... -->
-    <!-- KEEP ALL EXISTING CONTENT HERE UNCHANGED (as in your original HTML) -->
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
+  <section class="service" id="service" data-aos="fade-up">
     <div class="row">
-      <ul class="footer__social-links">
-        <li>
-          <a href="https://x.com/hephzibah_ijeje" target="_blank" title="Twitter">
-            <img src="image/twitter.jpeg" alt="Twitter" class="footer__social-image" />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/hephzibahij" target="_blank" title="GitHub">
-            <img src="image/github.png" alt="GitHub" class="footer__social-image" />
-          </a>
-        </li>
-        <li>
-          <a href="https://codepen.io/hephzibahij/" target="_blank" title="CodePen">
-            <img src="image/codepen.png" alt="CodePen" class="footer__social-image" />
-          </a>
-        </li>
-      </ul>
+      <h2>Services</h2>
+      <p>I offer modern frontend development, responsive design, and user experience optimization.</p>
     </div>
+  </section>
+
+  <section class="project" id="project" data-aos="fade-up">
+    <div class="row">
+      <h2>Projects</h2>
+      <p>Explore my recent work and contributions on <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+      <img src="image/github.png" alt="GitHub portfolio" />
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials" data-aos="fade-up">
+    <div class="row">
+      <h2>Testimonials</h2>
+      <blockquote>
+        “Hephzibah is a detail-oriented frontend developer who delivers excellent work!” – Client
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" data-aos="fade-up">
+    <div class="row">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hephzibah Ijeje. All rights reserved.</p>
   </footer>
 
   <!-- JavaScript for Hamburger Menu -->
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('nav__items--active');
-      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
-      hamburger.setAttribute('aria-expanded', !expanded);
-    });
-
-    // Optional: close menu on nav item click (mobile UX)
-    document.querySelectorAll('.nav__link').forEach(link => {
-      link.addEventListener('click', () => {
-        if (navMenu.classList.contains('nav__items--active')) {
-          navMenu.classList.remove('nav__items--active');
-          hamburger.setAttribute('aria-expanded', false);
-        }
-      });
+    document.querySelector('.hamburger-icon').addEventListener('click', () => {
+      document.querySelector('.nav__items').classList.toggle('nav__items--active');
     });
   </script>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
