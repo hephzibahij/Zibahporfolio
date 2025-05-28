@@ -2,91 +2,200 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hephzibah Ijeje | Frontend Developer in Port-Harcourt</title>
+
+  <meta name="description" content="Portfolio of Hephzibah Ijeje, a frontend web developer based in Port-Harcourt, Nigeria." />
+  <meta name="keywords" content="Hephzibah Ijeje, Web Developer, Frontend Developer, HTML, CSS, JavaScript, React" />
+  <link rel="shortcut icon" href="image/tech.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        
-        <!-- Logo -->
-        <div class="flex-shrink-0">
-          <a href="#" class="text-xl font-bold text-gray-800">MyPortfolio</a>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#Service" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="hamburger-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
+      </nav>
+    </div>
 
-        <!-- Hamburger Button (mobile only) -->
-        <div class="md:hidden">
-          <button id="menu-toggle" class="text-gray-800 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Desktop Menu -->
-        <div id="menu" class="hidden md:flex space-x-4">
-          <a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
-          <a href="#about" class="text-gray-700 hover:text-blue-500">About</a>
-          <a href="#projects" class="text-gray-700 hover:text-blue-500">Projects</a>
-          <a href="#contact" class="text-gray-700 hover:text-blue-500">Contact</a>
-        </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary"><span>Hephzibah Ijeje</span></h1>
+        <p>A frontend developer based in Port-Harcourt, Nigeria. Let’s connect!</p>
+        <a href="mailto:hephzibahijeje89@gmail.com" class="btn btn--pink">Get in Touch</a>
       </div>
     </div>
+  </header>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
-      <a href="#home" class="block py-2 text-gray-700 hover:text-blue-500">Home</a>
-      <a href="#about" class="block py-2 text-gray-700 hover:text-blue-500">About</a>
-      <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-500">Projects</a>
-      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-500">Contact</a>
-    </div>
-  </nav>
+  <main role="main">
+    <!-- Work -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+          <!-- Project 1 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Portfolio Template</h3>
+              <p>A free open-source portfolio template you can reuse and customize.</p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/hephzibahij" class="link__text" target="_blank">Visit Site <span>&rarr;</span></a>
+                <a href="https://github.com/hephzibahij/Zibahportfolio" target="_blank" title="Source Code">
+                  <img src="image/github.png" alt="GitHub" class="work__code" />
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <a href="https://github.com/cleokibet/Ahead-Restaurant_Management_System.git" target="_blank">
+                <img src="image/resturant.png" alt="Restaurant Management System" class="work__image" />
+              </a>
+            </div>
+          </div>
 
-  <!-- Hero Section -->
-  <section id="home" class="pt-20 pb-32 text-center">
-    <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-    <p class="text-lg text-gray-600">I am a web developer passionate about building beautiful and functional websites.</p>
-  </section>
+          <!-- Project 2 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>HERVOICE</h3>
+              <p>This project empowers the GirlChild by giving voice to female survivors of rape, discrimination, and sexual abuse. It supports SDG goals and promotes gender equality.</p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>React</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://hephzibahij.github.io/Herware/" class="link__text" target="_blank">Visit Site <span>&rarr;</span></a>
+                <a href="https://github.com/hephzibahij/Herware.git" target="_blank" title="Source Code">
+                  <img src="image/github.png" alt="GitHub" class="work__code" />
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <a href="https://github.com/hephzibahij/Herware.git" target="_blank">
+                <img src="image/gitchild.jpeg" alt="HERVOICE Project" class="work__image" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p class="max-w-2xl mx-auto text-gray-600">I'm a creative developer who loves solving problems and building user-friendly web experiences using HTML, CSS, JavaScript, and modern frameworks.</p>
-  </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I’m Hephzibah Ijeje, a frontend developer based in Port-Harcourt. I studied Economics at the University of Port-Harcourt and completed a 12-month software engineering training with ALX. Through perseverance and continuous learning, I’ve gained skills in web development and collaborated on several projects.
+            </p>
+            <a href="image/Professional Modern CV Resume.png" class="btn" target="_blank">My Resume</a>
+          </div>
+          <div class="about__photo-container">
+            <img src="image/IMG_1988.jpeg" alt="Hephzibah Ijeje" class="about__photo" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-4">Projects</h2>
-    <p class="max-w-2xl mx-auto text-gray-600">Here are a few of the projects I've worked on recently.</p>
-    <!-- Add project cards here -->
-  </section>
+    <!-- Services -->
+    <section class="Service" id="Service">
+      <div class="row">
+        <h2>Services</h2>
+        <div class="service__boxes">
+          <!-- Service 1 -->
+          <div class="service__box">
+            <div class="service__image-box">
+              <img src="image/web development.jpeg" alt="Web Development" class="service__image" />
+            </div>
+            <div class="service__text">
+              <h3>Web Development</h3>
+              <p>Building responsive, accessible, and scalable websites using the latest web technologies.</p>
+              <a href="https://herware.vercel.app/" target="_blank" class="btn">Visit Site</a>
+            </div>
+          </div>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-    <p class="max-w-2xl mx-auto text-gray-600">Feel free to reach out via email or connect with me on social media.</p>
-  </section>
+          <!-- Service 2 -->
+          <div class="service__box">
+            <div class="service__image-box">
+              <img src="image/685d0c21-b1f6-4e1b-b481-4906734815b7.jpeg" alt="PWA" class="service__image" />
+            </div>
+            <div class="service__text">
+              <h3>Progressive Web Apps (PWA)</h3>
+              <p>Creating engaging web apps with offline functionality using service workers and manifest files.</p>
+              <a href="https://medconnect-z1oo.onrender.com/" target="_blank" class="btn">Visit Site</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service__box">
+            <div class="service__image-box">
+              <img src="image/tech.jpeg" alt="Collaboration" class="service__image" />
+            </div>
+            <div class="service__text">
+              <h3>Collaboration & Communication</h3>
+              <p>Working with designers, backend developers, and managers to deliver complete project solutions through effective communication.</p>
+              <a href="http://hephzibahij.github.io/Recyclift-web-devel" target="_blank" class="btn">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            Whether you have a question, a project idea, or just want to say "Hi 👋", feel free to reach out. I aim to respond promptly, and email is the best way to reach me.
+          </p>
+          <a href="mailto:hephzibahijeje89@gmail.com" class="btn">Email Me</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="py-6 text-center bg-gray-200">
-    <p class="text-gray-600">&copy; 2025 MyPortfolio. All rights reserved.</p>
+  <footer class="footer" role="contentinfo">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li>
+          <a href="https://x.com/hephzibah_ijeje" target="_blank" title="Twitter">
+            <img src="image/twitter.jpeg" alt="Twitter" class="footer__social-image" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hephzibahij" target="_blank" title="GitHub">
+            <img src="image/github.png" alt="GitHub" class="footer__social-image" />
+          </a>
+        </li>
+        <li>
+          <a href="https://codepen.io/hephzibahij/" target="_blank" title="CodePen">
+            <img src="image/codepen.png" alt="CodePen" class="footer__social-image" />
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
-
-  <!-- Hamburger Toggle Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      toggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    });
-  </script>
 </body>
 </html>
